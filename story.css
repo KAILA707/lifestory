@@ -1,0 +1,88 @@
+header {
+    background-image: url("/storylife.jpg");
+    background-size: cover;
+    padding: 30%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures elements are spread out */
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
+
+header h1 {
+    font-size: 90px; /* Adjust size as needed */
+    font-family: 'Gorditas', cursive; /* Apply Gorditas font */
+    font-weight: bold; /* Make it bold */
+    color: white; /* Adjust color if needed */
+    text-align: center; /* Align text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 5px; /* Adjust as needed */
+}
+
+.logo-container h2 {
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.logo img {
+    max-height: 60px;
+    border-radius: 50%; /* Corrected to make it a circle */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Missing .box definition */
+.box {
+    width: 300px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.box:hover {
+    transform: translateY(-10px); /* Moves the box up on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a floating effect */
+}
+
+.box img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures uniform image sizing */
+    display: block;
+}
+
+.content {
+    padding: 10px;
+}
+
+.read-more-link, .read-less-link {
+    cursor: pointer;
+    color: blue;
+    margin-top: 10px;
+}
+
+.read-less-link {
+    display: none;
+}
+
+.expanded-text {
+    display: none;
+}
